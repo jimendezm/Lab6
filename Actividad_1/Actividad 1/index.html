@@ -1,0 +1,51 @@
+<html>
+  <body>
+    <header>
+      <h1 id="site-title">Conferencia Web 2025</h1>
+      <nav class="nav">
+        <a href="#agenda" class="btn">Agenda</a>
+        <a href="#registro" class="btn" data-cta="registro">Registro</a>
+        <a href="https://tec.ac.cr" target="_blank" rel="noopener">Sitio TEC</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <ul class="agenda-list">
+          <li class="item">HTML Semántico</li>
+          <li class="item destacado">CSS Avanzado</li>
+          <li class="item" data-role="speaker">JavaScript Moderno</li>
+        </ul>
+      </section>
+
+      <section id="expositores">
+        <article class="card" id="card-1">
+          <h3 class="card-title">Ada Lovelace</h3>
+          <span class="tag">Keynote</span>
+          <span class="tag">IA</span>
+        </article>
+        <article class="card" id="card-2">
+          <h3 class="card-title">Alan Turing</h3>
+          <button class="btn-like" aria-label="marcar favorito">❤</button>
+          <span class="tag">Criptografía</span>
+        </article>
+      </section>
+
+      <section id="registro">
+        <form id="form-registro">
+          <label
+            >Correo
+            <input type="email" name="email" placeholder="tu@correo.com" />
+          </label>
+          <label
+            >Nombre
+            <input type="text" name="nombre" />
+          </label>
+          <button type="submit" id="enviar">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

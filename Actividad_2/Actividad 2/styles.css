@@ -1,0 +1,136 @@
+:root {
+  --bg: #f6f7fb;
+  --ink: #1b1f2a;
+  --brand: #005bbb;
+  --muted: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+.nav {
+  margin-left: auto;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.container {
+  padding: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+.hero {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+  border-radius: 12px;
+  display: grid;
+  gap: 0.75rem;
+}
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+  border-radius: 12px;
+}
+.card-title {
+  margin: 0 0 0.25rem;
+}
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  list-style: none;
+}
+.tag {
+  background: #eef2ff;
+  color: #1e3a8a;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.btn {
+  padding: 0.5rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  cursor: pointer;
+}
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.btn.primary {
+  background: var(--brand);
+  color: white;
+  border-color: var(--brand);
+}
+
+.footer {
+  padding: 1rem 1.5rem;
+  color: var(--muted);
+  border-top: 1px solid #e5e7eb;
+}
+
+.resaltado {
+  color: #b91c1c;
+  font-weight: 700;
+}
+.oculto {
+  display: none;
+}
+
+body.oscuro {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+body.oscuro .card,
+body.oscuro .hero {
+  background: #0b1220;
+  border-color: #1f2937;
+}
+body.oscuro .btn {
+  background: #0f172a;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+body.oscuro .tag {
+  background: #172554;
+  color: #c7d2fe;
+}
+
+/* Cambios visuales por data-state */
+#speaker-card[data-state="active"] {
+  outline: 2px solid #10b981;
+}
+.badge {
+  background: #10b981;
+  color: white;
+  padding: 0.15rem 0.4rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+}

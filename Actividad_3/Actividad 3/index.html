@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Actividad DOM - Lista interactiva</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 1rem;
+      }
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+      li {
+        background: #f3f4f6;
+        margin: 5px 0;
+        padding: 8px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .completado {
+        text-decoration: line-through;
+        color: gray;
+      }
+      .prioridad {
+        background: #fee2e2;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lista de Tareas</h1>
+
+    <input type="text" id="nuevaTarea" placeholder="Escribe una tarea" />
+    <button id="btnFinal">Agregar al final</button>
+    <button id="btnInicio">Agregar al inicio</button>
+    <button id="btnVaciar">Vaciar lista</button>
+
+    <ul id="lista"></ul>
+
+    <script src="app.js"></script>
+  </body>
+</html>
